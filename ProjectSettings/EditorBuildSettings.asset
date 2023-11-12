@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Preload.unity
+    guid: aa1f8bd7718eec04c87d8bd4c2a13ea1
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: df65d23a3dfb7624d89569100eaeea15
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 18cbb756160fadc44a50328cec253b87
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 6f122f51b9ea61749aa0e1c3dfdb6d54
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 9dae07e13263fd54a9b171107f3d9a9d
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: dfc50d0902d8d4848bff5625a7065ee0
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: a9b7dd3983780c94aa9e6a7a07d911b4
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: 2d48036a3203630408ea768af3276255
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: 58ef07fa4fc311049bb43b075600f212
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: 5aefee1cfe4d2184ebcda20a2e7ae996
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: 6ae2894d46b814440bcd9776ac03bff5
+  - enabled: 1
+    path: Assets/Scenes/Level 11.unity
+    guid: 3c62ec126b713614ea963a765537a2c6
+  - enabled: 1
+    path: Assets/Scenes/Level 12.unity
+    guid: a5b553cba32adb444b791f6dd7636ec3
+  - enabled: 1
+    path: Assets/Scenes/Level 13.unity
+    guid: 5cdcd887e630e0d4aa06d8881036b46e
+  - enabled: 1
+    path: Assets/Scenes/Level 14.unity
+    guid: e180d168f3588a44aa867f3e94dd0e44
+  - enabled: 1
+    path: Assets/Scenes/Level 15.unity
+    guid: 178f6462a58231543b70405bb188471c
+  - enabled: 1
+    path: Assets/Scenes/Level 16.unity
+    guid: cac327b307ccd71468364c5e9d2c3537
+  - enabled: 1
+    path: Assets/Scenes/Level 17.unity
+    guid: 1965a5a94d6216a4b86bb6bda39f0fc6
+  - enabled: 1
+    path: Assets/Scenes/Livel 18.unity
+    guid: 013457f37fd28f249bc47e000c114c80
+  - enabled: 1
+    path: Assets/Scenes/Livel 19.unity
+    guid: ee673fbaa3e05de409e2d2d6fce6d672
+  - enabled: 1
+    path: Assets/Scenes/Livel 20.unity
+    guid: d26ca749c45f16f43894fedeb443f2de
+  - enabled: 1
+    path: Assets/Scenes/Livel 21.unity
+    guid: 4ce3610d319cac54d890199295cfedc2
+  - enabled: 1
+    path: Assets/Scenes/Livel 22.unity
+    guid: e74103550045ad844a4f336fd268a309
+  - enabled: 1
+    path: Assets/Scenes/Livel 23.unity
+    guid: 9bdb0cc7bcc0093438d407fc331025ca
+  - enabled: 1
+    path: Assets/Scenes/Livel 24.unity
+    guid: b5a5cec5f2893a74e9135ace55c0965f
+  - enabled: 1
+    path: Assets/Scenes/Livel 25.unity
+    guid: a5606d7da9fc4a440bc438f36861c99b
+  - enabled: 1
+    path: Assets/Scenes/Livel 26.unity
+    guid: e5399aed90545f342a4f52d2db840721
+  - enabled: 1
+    path: Assets/Scenes/Livel 27.unity
+    guid: 710570cc8b3f4cb46a9c07ff44fe6ed9
+  m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 9009bf9e326d4bb4d8a2833ac713cd5b, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 15503b999da9b384e871182441ff4bdc, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 30a223ad7c2777e42b2d6e45a8d36577, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 592bdbfd27385c24b805d230a945162f, type: 2}

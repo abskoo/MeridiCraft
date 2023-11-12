@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dc81093cf86baaf4bbfe0ba4e92fc296
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - groundcheck: {instanceID: 0}
+  - damagebox: {fileID: 6633535967435259018, guid: f534e029535d53241980476666afce41, type: 3}
+  - healthbar: {instanceID: 0}
+  - immunity: {fileID: 1373037898823743461, guid: 0320f1dc723719d478535d3396f16395, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
