@@ -15,6 +15,8 @@ public class Zombie_AI : MonoBehaviour
     public float RangrTOattack;
     public float InitialTimer;
     public float timer;
+    public AudioSource sound;
+    
 
     public GameObject DamageBox;
     public Animator anim;
@@ -49,6 +51,7 @@ public class Zombie_AI : MonoBehaviour
 
                 CanAttack = false;
                 anim.SetBool("Run", true);
+                
             }
             else if (transform.position.x >= Detect.transform.position.x + RangrTOattack)
             {
@@ -57,6 +60,7 @@ public class Zombie_AI : MonoBehaviour
 
                 CanAttack = false;
                 anim.SetBool("Run", true);
+               
             }
 
             else
@@ -72,6 +76,8 @@ public class Zombie_AI : MonoBehaviour
                     anim.SetBool("Run", false);
 
                 }
+               
+                
 
             }
         }
@@ -112,8 +118,12 @@ public class Zombie_AI : MonoBehaviour
                 Range = NewR;
                 RangeObiect.GetComponent<BoxCollider2D>().size = Range;
                 rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+                sound.Play();
+                sound.loop = true;
 
             }
+            else
+                sound.loop = false;
         }
         
     }
