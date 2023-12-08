@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     float Jump = 2f;
     bool Isjump;
     Animator anmi;
+    public AudioSource sound;
 
     
     public Transform groundcheck;
@@ -157,22 +158,29 @@ public class Player : MonoBehaviour
     public void PointerDownLeft()
     {
         MoveLeft = true;
+        sound.Play();
+        sound.loop = true;
         anmi.SetBool("Run", true);
         transform.localScale = new Vector3(-0.2060078f, 0.2161167f, 1f);
     }
     public void PointerUPeft()
     {
+        sound.loop = false;
         MoveLeft = false;
     }
     public void PointerDownRight()
     {
+
         MoveRight = true;
+        sound.Play();
+        sound.loop = true;
         anmi.SetBool("Run", true);
         transform.localScale = new Vector3(0.2060078f, 0.2161167f, 1f);
     }
     public void PointerUPRight()
     {
         MoveRight = false;
+        sound.loop = false;
     }
 
     void Movement()
@@ -180,11 +188,15 @@ public class Player : MonoBehaviour
         if (MoveLeft)
         {
             horizontalMove = -speed;
+           
+            
         }
         else if (MoveRight)
         {
             horizontalMove = speed;
             
+            
+
         }
         else
         {
