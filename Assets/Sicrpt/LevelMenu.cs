@@ -29,7 +29,7 @@ public class LevelMenu : MonoBehaviour
 
     public void OpenLevel(int LevelId)
     {
-        string levelName = "Livel " + LevelId;
+        string levelName = "Level " + LevelId;
         SceneManager.LoadScene(levelName);
     }
 }
