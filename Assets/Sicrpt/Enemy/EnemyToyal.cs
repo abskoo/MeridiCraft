@@ -43,6 +43,7 @@ public class EnemyToyal : MonoBehaviour
         if (!invinceable)
         {
             currenHealth -= Damage;
+            DamageSounds.instace.SoundSource.PlayOneShot(DamageSounds.instace.DamageSound);
             if (currenHealth <= 0)
             {
 

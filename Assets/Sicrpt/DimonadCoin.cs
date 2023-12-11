@@ -26,6 +26,7 @@ public class DimonadCoin : MonoBehaviour
             {
                 gameManager.instanet.CoinDimonad += CoineValue;
                 gameManager.instanet.UpdateCollectables();
+                SoundManger.instace.SoundSource.PlayOneShot(SoundManger.instace.coineSound);    
                 Destroy(gameObject);
                 
             }

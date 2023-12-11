@@ -16,7 +16,8 @@ public class Zombie_AI : MonoBehaviour
     public float InitialTimer;
     public float timer;
     public AudioSource sound;
-    
+
+
 
     public GameObject DamageBox;
     public Animator anim;
@@ -154,6 +155,8 @@ public class Zombie_AI : MonoBehaviour
         }
         public void afterone()
         {
+        sound.mute = true;
+        SoundDeath.instace.SoundSource.PlayOneShot(SoundDeath.instace.DeathSound);
             anim.SetTrigger("Death");
         }
 

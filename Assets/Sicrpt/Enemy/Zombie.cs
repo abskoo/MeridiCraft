@@ -12,6 +12,8 @@ public class Zombie : MonoBehaviour
     public Animator anim;
     Rigidbody2D rb;
 
+    public AudioSource Sound;
+
     
     
     void Start()
@@ -29,6 +31,7 @@ public class Zombie : MonoBehaviour
     {
         if (transform.position == start.position)
         {
+            Sound.Play();
             nextPos = end.position;
             transform.localScale = new Vector3(-0.093291f, 0.093291f, 1f);
             //Scale_.transform.localScale = new Vector3(-1f, 1f, 1f);
@@ -36,6 +39,7 @@ public class Zombie : MonoBehaviour
         }
         if (transform.position == end.position)
         {
+            Sound.Play();
             nextPos = start.position;
             //Scale_.transform.localScale = new Vector3(1f, 1f, 1f);
             transform.localScale = new Vector3(0.093291f, 0.093291f, 1f);
@@ -77,6 +81,7 @@ public class Zombie : MonoBehaviour
     }
     public void afterone()
     {
+        SoundDeath.instace.SoundSource.PlayOneShot(SoundDeath.instace.DeathSound);
         anim.SetTrigger("Death");
     }
    

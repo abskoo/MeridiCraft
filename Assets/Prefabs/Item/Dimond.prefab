@@ -102,7 +102,6 @@ MonoBehaviour:
   isCoine: 1
   isEdible: 0
   CoineValue: 1
-  HealAmount: 0
 --- !u!58 &769906061610200654
 CircleCollider2D:
   m_ObjectHideFlags: 0

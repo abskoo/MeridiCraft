@@ -327,6 +327,7 @@ public class Player : MonoBehaviour
     public void AttackOn()
     {
         damagebox.SetActive(true);
+        AttackSound.instace.SoundSource.PlayOneShot(AttackSound.instace.AtSound);
     }
     public void AttackOff()
     {
