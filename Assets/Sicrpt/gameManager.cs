@@ -17,6 +17,8 @@ public class gameManager : MonoBehaviour
     public int CoinDimonad;
 
 
+
+
     
 
     
@@ -60,6 +62,7 @@ public class gameManager : MonoBehaviour
     public void CollectCoin(int value)
     {
         CoinDimonad += value;
+  
         UpdateCollectables();
 
     }

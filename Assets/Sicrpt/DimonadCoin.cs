@@ -9,6 +9,8 @@ public class DimonadCoin : MonoBehaviour
     public bool isEdible;
 
     public int CoineValue;
+
+    
     
 
     
@@ -19,11 +21,13 @@ public class DimonadCoin : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            if(isCoine)
+            
+            if (isCoine)
             {
                 gameManager.instanet.CoinDimonad += CoineValue;
                 gameManager.instanet.UpdateCollectables();
                 Destroy(gameObject);
+                
             }
             //if(isEdible)
             //{
