@@ -11,23 +11,31 @@ public class LevelMenu : MonoBehaviour
 
     private void Awake()
     {
-        int unlockLevel = PlayerPrefs.GetInt("UnlockLevel", 1);
-        for(int i = 0; i < buttons.Length; i++)
+        int unlockLevel = PlayerPrefs.GetInt("unlockLevel",1);
+        for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].interactable = false;
-            if(i <= unlockLevel)
-                buttons[i].transform.GetChild(1).gameObject.SetActive(false);
-            
         }
-        for(int i = 0; i < unlockLevel; i++)
+
+        for (int i = 0; i < unlockLevel; i++)
         {
             buttons[i].interactable = true;
-            buttons[i].transform.GetChild(1).gameObject.SetActive(false);
         }
     }
+            //        buttons[i].transform.GetChild(1).gameObject.SetActive(false);
+            //        if(i <= unlockLevel)
+            //            buttons[i].transform.GetChild(1).gameObject.SetActive(false);
+
+            //    }
+            //    for(int i = 0; i < unlockLevel; i++)
+            //    {
+            //        buttons[i].interactable = true;
+            //        buttons[i].transform.GetChild(1).gameObject.SetActive(false);
+            //    }
+            //}
 
 
-    public void OpenLevel(int LevelId)
+       public void OpenLevel(int LevelId)
     {
         string levelName = "Level " + LevelId;
         SceneManager.LoadScene(levelName);

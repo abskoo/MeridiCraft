@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemyToyal : MonoBehaviour
 {
+    public static EnemyToyal instance;
+    private void Awake()
+    {
+        instance = this;
+    }
     public static EnemyToyal insert;
     public int MaxHealth;
     public int currenHealth;
@@ -17,12 +22,14 @@ public class EnemyToyal : MonoBehaviour
     public float invincableTime;
     public float invincableTimer;
     public GameObject Player;
+    public SpriteRenderer Sprite;
     
     // Start is called before the first frame update
     void Start()
     {
         currenHealth = MaxHealth;
         anim = GetComponent<Animator>();
+
         
     }
 
@@ -31,12 +38,16 @@ public class EnemyToyal : MonoBehaviour
     {
         if (invincableTimer > 0)
         {
+
             invincableTimer -= Time.deltaTime;
         }
         else
         {
             invinceable = false;
+            
         }
+
+     
     }
     public void TakeDamage(int Damage)
     {
@@ -53,16 +64,18 @@ public class EnemyToyal : MonoBehaviour
             }
             invincableTime = invincableTimer;
             invinceable = true;
+            
         }
         
      
 
     }
-    //public void DesGameOjk()
-    //{
-    //     Destroy(gameObject);
-    //}
-
-
     
+    //void ChangeColor()
+    //{
+    //    if (invinceable == true)
+    //        Sprite.color = Color.white;
+    //    else
+    //        Sprite.color = Color.white;
+    //}
 }

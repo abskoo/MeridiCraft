@@ -208,26 +208,31 @@ public class Player : MonoBehaviour
 
     public void DownJump()
     {
+        JumpSound.instance.SoundSorce.PlayOneShot(JumpSound.instance.JumpDown);
         BoolJump = true;
        
-
     }
     public void UPJump()
     {
         BoolJump = false;
         
+
     }
 
     void MoveJump()
     {
         if (BoolJump == true && Isjump == false)
         {
+            
             rb.velocity = new Vector2(0, Jump);
             Isjump = true;
+            
         }
         else if(!BoolJump && Mathf.Abs(rb.velocity.y) < 0.01f)
         {
+            
             Isjump = false;
+         
         }
     }
 
@@ -236,7 +241,9 @@ public class Player : MonoBehaviour
         BoolAttack = true;
         if(!OnGround)
         {
+            
             anmi.SetTrigger("JumpAttack");
+
 
         }
         else

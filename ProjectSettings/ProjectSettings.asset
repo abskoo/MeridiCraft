@@ -763,11 +763,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 72f6a290-d56b-496a-b99c-1e8b601fef54
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: MeridiCraft
+  organizationId: brrz21
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
