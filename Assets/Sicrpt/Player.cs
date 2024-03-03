@@ -258,12 +258,12 @@ public class Player : MonoBehaviour
     {
         if (BoolAttack)
         {
-            int bb = 1;
+            
             
         }
         else if(!BoolAttack)
         {
-            int vv = 1;
+            
         }
         
     }
